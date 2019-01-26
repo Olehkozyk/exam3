@@ -1,0 +1,22 @@
+.text-primary{
+    color: $primary-color;
+}
+#{text-inputs()}{
+    margin: 0;
+}
+[type=number]{
+    appearance: none;
+    &::-webkit-inner-spin-button{
+        display: none;
+    }
+}
+button{
+    cursor: pointer;
+}
+a, button{
+    transition: .3s ease-in;
+    transition-property: color, background-color, opacity;
+    svg{
+        fill: currentColor;
+    }
+}

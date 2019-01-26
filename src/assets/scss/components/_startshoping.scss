@@ -1,0 +1,132 @@
+.ba-section-start{
+    position: relative;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+   padding: 100px 0 100px;
+    @include breakpoint(large){
+        padding: 358px 0 331px;
+    }
+}
+.ba-title-shop{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        // max-width: 500px;
+        font-size: 30px;
+        text-align: right;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        letter-spacing: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #f7f8f3;
+        @include breakpoint(large){
+            font-size: 55px;
+            margin-bottom: 14px;
+        }
+    }
+    
+}
+.ba-subtilte{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #f7f8f3;
+    letter-spacing: 7px;
+    font-weight: 300;
+    text-align: right;
+    @include breakpoint(large){
+        font-size: 24px;
+        margin-bottom: 52px;
+    }
+
+}
+.ba-btn-shop{
+    max-width: 270px;
+    padding: 15px 50px 15px 20px;
+    border: 1px solid#fff;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease-in;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    &:hover{
+        &::before{
+            transition: .3s ease-in;
+            width: 100%;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: #fff;
+        top: 50%;
+        right: 10px;
+        @include breakpoint(medium){
+            width: 45px;
+            top: 60%;
+        }
+        
+    }
+    @include breakpoint(medium){
+        font-size: 20px;
+        padding: 27px 111px 12px 41px;
+        margin-bottom: 30px;
+    }
+}
+.ba-btn-shopy-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.ba-btn-all-product{
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #f7f8f3;
+    &:hover{
+        color: aqua;
+    }
+    svg{
+        width: 20px;
+        height: 10px;
+        margin-left: 22px;
+    }
+}
+.ba-title-right{
+    display: none;
+    @include breakpoint(medium){
+      display: block;
+    }
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 20%;
+    z-index: 2222;
+    height: 20px;
+   
+    h2{
+        position: relative;
+        text-transform: uppercase;
+        z-index: 222222;
+        font-weight: 400;
+        font-size: 26px;
+        margin: 0;
+      
+    }
+
+}
+.ba-btn-scroll{
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 15px);
+    svg{
+        
+        width: 30px;
+        height: 16px;
+    }
+    
+}

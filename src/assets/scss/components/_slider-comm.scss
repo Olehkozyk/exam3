@@ -1,0 +1,66 @@
+.ba-slider-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+.ba-slider-commet{
+    position: relative;
+    .ba-btn-slide-right{
+        svg{
+            color: #fff;
+        }
+    }
+    .ba-btn-slide-left{
+        
+        svg{
+            color: #fff;
+        }
+    }
+}
+.ba-item-comm{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 300px 0 300px;
+    text-align: center;
+    img{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        @include breakpoint(medium){
+            margin-bottom: 40px;
+        }
+    }
+
+}
+.ba-blockquote{
+    max-width: 774px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 36px;
+}
+.ba-author{
+    font-size: 24px;
+    text-transform: uppercase;
+    position: relative;
+    &::before{
+        width: 45px;
+        background: #fff;
+        content: "";
+        height: 2px;
+        position: absolute;
+        left: -100%;
+        top: 50%;
+    }
+}
+.ba-text-section{
+    position: absolute;
+    bottom: 100px;
+    text-transform: uppercase;
+    left: -60px;
+    letter-spacing: 7px;
+    transform: rotate(90deg);
+}

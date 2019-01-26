@@ -1,0 +1,114 @@
+.ba-header{
+    position: absolute;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid#fff;
+    justify-content: space-around;
+    @include breakpoint(large){
+       justify-content: space-between;
+    }
+}
+.ba-header__menu{
+    display: flex;
+    align-items: center;
+    @include breakpoint(large){
+        display: block;
+     }
+}
+.ba-nav__header{
+
+    display: none;
+    @include breakpoint(large){
+        display: flex;
+    }
+    
+    text-transform: uppercase;
+    margin: 0;
+    padding: 36px 0 24px 60px;
+    list-style: none;
+    li + li{
+        margin-left: 30px;
+    }
+    li{
+        overflow: hidden;
+    }
+    a{
+        font-size: 16px;
+        font-weight: 400;
+        transition: .5s ease-in;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            top: 50%;
+            left: -10px;
+            position: absolute;
+            content: "";
+            width: 400px;
+            height: 2px;
+            background: #ced6af;
+            transform: translateX(-100%);
+            transition: .5s ease-in;
+        }
+        &:hover{
+            &::before{
+                transition: .5s ease-in;
+                transform: translateX(0);
+            }
+        }
+    }
+    
+}
+.ba-header__logo{
+    display: flex;
+    align-items: center;
+    @include breakpoint(large){
+        display: block;
+        padding-top: 27px;
+     }
+   
+    a{
+        &:hover{
+            color: #3adb76;
+        }
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+.ba-header__btn{
+    display: none;
+    @include breakpoint(large){
+        display: flex;
+    }
+    
+    align-items: center;
+    a{
+        &:hover{
+            color: #3adb76;
+        }
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 36px 34px 24px 36px;
+    }
+    a {
+        border-left: 1px solid#fff;
+    }
+}
+.menu-adaptive{
+    li{
+        padding-left: 10px;
+        &:hover{
+            a{
+                color: #3adb76;
+
+            }
+        }
+    }
+    li + li{
+        
+        margin-top: 20px;
+    }
+}
